@@ -12,4 +12,4 @@ A express-graphql server should be running on port 5000, it serves the data fetc
 
 To implement:
 
-- Data is being obtained directly from data.json file. GraphQL queries need to be implemented to request data from the server.
+- Data is being obtained directly from client/src/data.json. GraphQL queries need to be implemented to request data from the server.
