@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Products.css";
+import StarRatings from "react-star-ratings";
 
 // import { useQuery, gql } from "@apollo/client";
 
@@ -40,25 +41,16 @@ export default class Products extends Component {
                   </p>
                   <p className="product-type">{product.type}</p>
                   <div>
-                    {[...Array(5)].map((star, i) => {
-                      const ratingValue = i + 1;
-                      const productRating = Math.round(product.rating / 20);
-                      return (
-                        <FaStar
-                          className="star"
-                          size={10}
-                          color={
-                            ratingValue <= productRating
-                              ? "##000000"
-                              : "#e4e5e9"
-                          }
-                          key={i}
-                        />
-                      );
-                    })}
+                    <StarRatings
+                      rating={product.rating / 20}
+                      starRatedColor="black"
+                      numberOfStars={5}
+                      starDimension="12px"
+                      starSpacing="1px"
+                    />
                   </div>
                   <div>
-                    <div>
+                    <div className="product-price">
                       from € {product.price / 100} / {product.size}{" "}
                     </div>
                   </div>
