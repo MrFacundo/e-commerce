@@ -36,6 +36,10 @@
   color: #414141;
 }
 
+.product-price {
+  margin-top: 1rem;
+}
+
 /* media queries */
 
 @media screen and (max-width: 1024px) {

@@ -7,5 +7,3 @@ There is also an express-graphql server is running on port 5000, it serves the d
 To implement:
 
 - Data is being obtained directly from data.json file. GraphQL queries need to be implemented to request data from the server.
-- Combine filters []
-- Pagination []
